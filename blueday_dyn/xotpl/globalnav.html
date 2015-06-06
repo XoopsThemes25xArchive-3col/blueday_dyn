@@ -1,0 +1,118 @@
+
+<{includeq file="$theme_name/language.html"}>
+
+<div id="xo-globalnav" class="x2-nl x2-navigation">
+<ul>
+		<li class="x2-label"><{$smarty.const.THEME_NAVTITLE}></li>
+
+        <!-- menu en mode anonyme -->
+
+		<li><a href="<{xoAppUrl}>" accesskey="a"  title="<{$smarty.const.THEME_HOME_DESC}>"><img src="<{xoImgUrl icons/action/home.png}>" />&nbsp;<{$smarty.const.THEME_HOME}></a></li>
+		
+    
+    <{if !$xoops_isuser}>
+
+
+    <li><a href="<{xoAppUrl modules/news/}>" accesskey=""  title="<{$smarty.const.THEME_MODULE1_DESC}>"><img src="<{xoImgUrl icons/action/articles.png}>" />&nbsp;<{$smarty.const.THEME_MODULE1}></a>
+
+                <ul>
+                  <li><a href="<{xoAppUrl modules/news/article.php?storyid=3}>" title="<{$smarty.const.THEME_MODULE1_SUB1_DESC}>"><{$smarty.const.THEME_MODULE1_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/news/article.php?storyid=4}>" title="<{$smarty.const.THEME_MODULE1_SUB2_DESC}>"><{$smarty.const.THEME_MODULE1_SUB2}></a></li>
+                  <li><a href="<{xoAppUrl modules/news/article.php?storyid=5}>" title="<{$smarty.const.THEME_MODULE1_SUB3_DESC}>"><{$smarty.const.THEME_MODULE1_SUB3}></a></li>
+                  <li><a href="<{xoAppUrl modules/news/article.php?storyid=4}>" title="<{$smarty.const.THEME_MODULE1_SUB2_DESC}>"><{$smarty.const.THEME_MODULE1_SUB4}></a></li>
+                  <li><a href="<{xoAppUrl modules/news/article.php?storyid=5}>" title="<{$smarty.const.THEME_MODULE1_SUB3_DESC}>"><{$smarty.const.THEME_MODULE1_SUB5}></a></li>
+                
+                </ul></li>
+
+		<li><a href="<{xoAppUrl modules/mydownloads/}>" accesskey="" title="<{$smarty.const.THEME_MODULE2_DESC}>"><img src="<{xoImgUrl icons/action/telechargement.png}>" />&nbsp;<{$smarty.const.THEME_MODULE2}></a>
+                <ul>
+                  <li><a href="<{xoAppUrl modules/mydownloads/viewcat.php?cid=1}>" title="<{$smarty.const.THEME_MODULE2_SUB1_DESC}>"><{$smarty.const.THEME_MODULE2_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/mydownloads/viewcat.php?cid=3}>" title="<{$smarty.const.THEME_MODULE2_SUB2_DESC}>"><{$smarty.const.THEME_MODULE2_SUB2}></a></li>
+				          <li><a href="<{xoAppUrl modules/mydownloads/viewcat.php?cid=4}>" title="<{$smarty.const.THEME_MODULE2_SUB3_DESC}>"><{$smarty.const.THEME_MODULE2_SUB3}></a></li>
+                  <li><a href="<{xoAppUrl modules/mydownloads/viewcat.php?cid=5}>" title="<{$smarty.const.THEME_MODULE2_SUB2_DESC}>"><{$smarty.const.THEME_MODULE2_SUB4}></a></li>
+				          <li><a href="<{xoAppUrl modules/mydownloads/viewcat.php?cid=6}>" title="<{$smarty.const.THEME_MODULE2_SUB3_DESC}>"><{$smarty.const.THEME_MODULE2_SUB5}></a></li>                
+			         	</ul></li>
+
+		<li><a href="<{xoAppUrl modules/mylinks/}>" accesskey="" title="<{$smarty.const.THEME_MODULE3_DESC}>"><img src="<{xoImgUrl icons/action/lien.png}>" />&nbsp;<{$smarty.const.THEME_MODULE3}></a>
+                <ul>
+                  <li><a href="<{xoAppUrl modules/mylinks/viewcat.php?cid=1}>" title="<{$smarty.const.THEME_MODULE3_SUB1_DESC}>"><{$smarty.const.THEME_MODULE3_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/mylinks/viewcat.php?cid=2}>" title="<{$smarty.const.THEME_MODULE3_SUB2_DESC}>"><{$smarty.const.THEME_MODULE3_SUB2}></a></li>
+                  <li><a href="<{xoAppUrl modules/mylinks/viewcat.php?cid=3}>" title="<{$smarty.const.THEME_MODULE3_SUB3_DESC}>"><{$smarty.const.THEME_MODULE3_SUB3}></a></li>
+                  <li><a href="<{xoAppUrl modules/mylinks/viewcat.php?cid=4}>" title="<{$smarty.const.THEME_MODULE3_SUB4_DESC}>"><{$smarty.const.THEME_MODULE3_SUB4}></a></li>
+                  <li><a href="<{xoAppUrl modules/mylinks/viewcat.php?cid=5}>" title="<{$smarty.const.THEME_MODULE3_SUB5_DESC}>"><{$smarty.const.THEME_MODULE3_SUB5}></a></li>
+                  <li><a href="<{xoAppUrl modules/mylinks/viewcat.php?cid=6}>" title="<{$smarty.const.THEME_MODULE3_SUB6_DESC}>"><{$smarty.const.THEME_MODULE3_SUB6}></a></li>                
+                </ul></li>
+                
+		<li><a href="<{xoAppUrl modules/myalbum/}>" accesskey="" title="<{$smarty.const.THEME_MODULE4_DESC}>"><img src="<{xoImgUrl icons/action/images.png}>" />&nbsp;<{$smarty.const.THEME_MODULE4}></a>
+                <ul>
+                  <li><a href="<{xoAppUrl modules/myalbum/viewcat.php?cid=1}>" title="<{$smarty.const.THEME_MODULE3_SUB1_DESC}>"><{$smarty.const.THEME_MODULE3_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/myalbum/viewcat.php?cid=2}>" title="<{$smarty.const.THEME_MODULE3_SUB2_DESC}>"><{$smarty.const.THEME_MODULE3_SUB2}></a></li>
+                  <li><a href="<{xoAppUrl modules/myalbum/viewcat.php?cid=3}>" title="<{$smarty.const.THEME_MODULE3_SUB3_DESC}>"><{$smarty.const.THEME_MODULE3_SUB3}></a></li>
+                  <li><a href="<{xoAppUrl modules/myalbum/viewcat.php?cid=4}>" title="<{$smarty.const.THEME_MODULE3_SUB4_DESC}>"><{$smarty.const.THEME_MODULE3_SUB4}></a></li>
+                  <li><a href="<{xoAppUrl modules/myalbum/viewcat.php?cid=5}>" title="<{$smarty.const.THEME_MODULE3_SUB5_DESC}>"><{$smarty.const.THEME_MODULE3_SUB5}></a></li>
+                </ul></li>
+
+
+		<{else}>
+
+    <li><a href="<{xoAppUrl modules/news/}>" accesskey=""  title="<{$smarty.const.THEME_MODULE1_DESC}>"><img src="<{xoImgUrl icons/action/articles.png}>" />&nbsp;<{$smarty.const.THEME_MODULE1}></a>
+
+                <ul>
+                  <li><a href="<{xoAppUrl modules/news/article.php?storyid=3}>" title="<{$smarty.const.THEME_MODULE1_SUB1_DESC}>"><{$smarty.const.THEME_MODULE1_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/news/article.php?storyid=4}>" title="<{$smarty.const.THEME_MODULE1_SUB2_DESC}>"><{$smarty.const.THEME_MODULE1_SUB2}></a></li>
+                  <li><a href="<{xoAppUrl modules/news/article.php?storyid=5}>" title="<{$smarty.const.THEME_MODULE1_SUB3_DESC}>"><{$smarty.const.THEME_MODULE1_SUB3}></a></li>
+                  <li><a href="<{xoAppUrl modules/news/article.php?storyid=4}>" title="<{$smarty.const.THEME_MODULE1_SUB2_DESC}>"><{$smarty.const.THEME_MODULE1_SUB4}></a></li>
+                  <li><a href="<{xoAppUrl modules/news/article.php?storyid=5}>" title="<{$smarty.const.THEME_MODULE1_SUB3_DESC}>"><{$smarty.const.THEME_MODULE1_SUB5}></a></li>
+                
+                </ul></li>
+
+		<li><a href="<{xoAppUrl modules/mydownloads/}>" accesskey="" title="<{$smarty.const.THEME_MODULE2_DESC}>"><img src="<{xoImgUrl icons/action/telechargement.png}>" />&nbsp;<{$smarty.const.THEME_MODULE2}></a>
+                <ul>
+                  <li><a href="<{xoAppUrl modules/mydownloads/viewcat.php?cid=1}>" title="<{$smarty.const.THEME_MODULE2_SUB1_DESC}>"><{$smarty.const.THEME_MODULE2_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/mydownloads/viewcat.php?cid=3}>" title="<{$smarty.const.THEME_MODULE2_SUB2_DESC}>"><{$smarty.const.THEME_MODULE2_SUB2}></a></li>
+				          <li><a href="<{xoAppUrl modules/mydownloads/viewcat.php?cid=4}>" title="<{$smarty.const.THEME_MODULE2_SUB3_DESC}>"><{$smarty.const.THEME_MODULE2_SUB3}></a></li>
+                  <li><a href="<{xoAppUrl modules/mydownloads/viewcat.php?cid=5}>" title="<{$smarty.const.THEME_MODULE2_SUB2_DESC}>"><{$smarty.const.THEME_MODULE2_SUB4}></a></li>
+				          <li><a href="<{xoAppUrl modules/mydownloads/viewcat.php?cid=6}>" title="<{$smarty.const.THEME_MODULE2_SUB3_DESC}>"><{$smarty.const.THEME_MODULE2_SUB5}></a></li>                
+			         	</ul></li>
+
+		<li><a href="<{xoAppUrl modules/mylinks/}>" accesskey="" title="<{$smarty.const.THEME_MODULE3_DESC}>"><img src="<{xoImgUrl icons/action/lien.png}>" />&nbsp;<{$smarty.const.THEME_MODULE3}></a>
+                <ul>
+                  <li><a href="<{xoAppUrl modules/mylinks/viewcat.php?cid=1}>" title="<{$smarty.const.THEME_MODULE3_SUB1_DESC}>"><{$smarty.const.THEME_MODULE3_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/mylinks/viewcat.php?cid=2}>" title="<{$smarty.const.THEME_MODULE3_SUB2_DESC}>"><{$smarty.const.THEME_MODULE3_SUB2}></a></li>
+                  <li><a href="<{xoAppUrl modules/mylinks/viewcat.php?cid=3}>" title="<{$smarty.const.THEME_MODULE3_SUB3_DESC}>"><{$smarty.const.THEME_MODULE3_SUB3}></a></li>
+                  <li><a href="<{xoAppUrl modules/mylinks/viewcat.php?cid=4}>" title="<{$smarty.const.THEME_MODULE3_SUB4_DESC}>"><{$smarty.const.THEME_MODULE3_SUB4}></a></li>
+                  <li><a href="<{xoAppUrl modules/mylinks/viewcat.php?cid=5}>" title="<{$smarty.const.THEME_MODULE3_SUB5_DESC}>"><{$smarty.const.THEME_MODULE3_SUB5}></a></li>
+                  <li><a href="<{xoAppUrl modules/mylinks/viewcat.php?cid=6}>" title="<{$smarty.const.THEME_MODULE3_SUB6_DESC}>"><{$smarty.const.THEME_MODULE3_SUB6}></a></li>                
+                </ul></li>
+                
+		<li><a href="<{xoAppUrl modules/myalbum/}>" accesskey="" title="<{$smarty.const.THEME_MODULE4_DESC}>"><img src="<{xoImgUrl icons/action/images.png}>" />&nbsp;<{$smarty.const.THEME_MODULE4}></a>
+                <ul>
+                  <li><a href="<{xoAppUrl modules/myalbum/viewcat.php?cid=1}>" title="<{$smarty.const.THEME_MODULE3_SUB1_DESC}>"><{$smarty.const.THEME_MODULE3_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/myalbum/viewcat.php?cid=2}>" title="<{$smarty.const.THEME_MODULE3_SUB2_DESC}>"><{$smarty.const.THEME_MODULE3_SUB2}></a></li>
+                  <li><a href="<{xoAppUrl modules/myalbum/viewcat.php?cid=3}>" title="<{$smarty.const.THEME_MODULE3_SUB3_DESC}>"><{$smarty.const.THEME_MODULE3_SUB3}></a></li>
+                  <li><a href="<{xoAppUrl modules/myalbum/viewcat.php?cid=4}>" title="<{$smarty.const.THEME_MODULE3_SUB4_DESC}>"><{$smarty.const.THEME_MODULE3_SUB4}></a></li>
+                  <li><a href="<{xoAppUrl modules/myalbum/viewcat.php?cid=5}>" title="<{$smarty.const.THEME_MODULE3_SUB5_DESC}>"><{$smarty.const.THEME_MODULE3_SUB5}></a></li>
+                </ul></li>
+		
+		<{/if}>
+
+
+		<{if $xoops_isadmin}>
+
+		<!-- lien supplémentaire si je suis administrateur -->
+
+		<li><a href="<{xoAppUrl modules/system/admin.php}>" accesskey="p" title="<{$smarty.const.THEME_ADMIN_DESC}>"><img src="<{xoImgUrl icons/action/administration.png}>" />&nbsp;<{$smarty.const.THEME_ADMIN}><!--[if IE 7]><!--></a><!--<![endif]-->
+				<!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul> 
+                  <li><a rel="external" href="<{xoAppUrl modules/system/admin.php?fct=preferences}>" title="<{$smarty.const.THEME_ADMIN_PREFERENCES_DESC}>"><{$smarty.const.THEME_ADMIN_PREFERENCES}></a></li>
+                  <li><a rel="external" href="<{xoAppUrl modules/system/admin.php?fct=modulesadmin}>" title="<{$smarty.const.THEME_ADMIN_GENERAL_DESC}>"><{$smarty.const.THEME_ADMIN_GENERAL}></a></li>
+                  <li><a rel="external" href="<{xoAppUrl modules/xoopsinfo/admin/index.php}>" title="<{$smarty.const.THEME_ADMIN_MODULES_DESC}>"><{$smarty.const.THEME_ADMIN_MODULES}></a></li>
+                  <li><a rel="external" href="<{xoAppUrl modules/xoopsinfo/admin/index.php}>" title="<{$smarty.const.THEME_ADMIN_IMAGES_DESC}>"><{$smarty.const.THEME_ADMIN_IMAGES}></a></li>                  
+                </ul></li>
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+
+		
+		<{/if}>
+		<li><a href="<{xoAppUrl modules/liaise/}>" accesskey="c" title="<{$smarty.const.THEME_CONTACT_DESC}>"><img src="<{xoImgUrl icons/action/contact.png}>" />&nbsp;<{$smarty.const.THEME_CONTACT}></a></li>
+</ul>
+</div>

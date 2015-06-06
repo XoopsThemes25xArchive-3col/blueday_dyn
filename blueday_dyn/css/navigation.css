@@ -1,0 +1,123 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work  */
+/* Mor.pho.GEN.e.sis version 1.2 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : navigation.css (version 1.0) - 04 avril 2007 */
+
+
+/*============= Style pour l'include globalnav.html ================*/
+#xo-globalnav {
+  height:									30px;
+	border:									none;
+	background-color:						transparent;
+	font-size:								.9em;
+}
+
+* html #xo-globalnav { height: 		30px; }
+
+#xo-globalnav img {
+	padding: 5px 0 0 5px;
+}
+
+#xo-globalnav .x2-label {display:	none;}
+#xo-globalnav ul {
+list-style-type:	none;
+}
+#xo-globalnav ul li {
+	float:									left;
+	position:								relative;
+	z-index:									auto !important /*Non-IE6*/;
+	z-index:									1000 /*IE6*/;
+}
+#xo-globalnav ul li a {
+	float:									none !important /*Non-IE6*/;
+	float:									left /*IE-6*/;
+	display:									block;
+	color: #666;
+	height:									25px;
+	line-height:							2em;
+	padding: 								0 10px 0 10px;
+	text-decoration:						none;
+	font-weight:							bold;
+}
+#xo-globalnav ul li a:hover {
+	color:									#3366cc;
+	background-color: 					#fff !important;
+	font-style: 							normal;
+	text-decoration:						none;
+	/*border:solid #99b3e6 1px;*/
+}
+#xo-globalnav ul li ul {
+	display:									none;
+	border:									none;
+	margin-left: 10px;
+}
+
+/*Non-IE6 hovering*/
+#xo-globalnav ul li:hover a {} 
+#xo-globalnav ul li:hover ul {
+	display:								block;
+	width:								130px;
+	position:							absolute;
+	z-index:								999;
+	top:									25px;
+	margin-top:							0em;
+	left:									0;
+}
+#xo-globalnav ul li ul li {}
+#xo-globalnav ul li:hover ul li a {
+	display:								block;
+	width:								130px;
+	height:								auto;
+	/*line-height:						1.3em;*/
+	margin-left:						0;
+	padding:						4px 10px 4px 10px;
+	border-right: 					1px solid #99b3e6;
+	border-left: 					1px solid #99b3e6;
+	border-bottom: 					1px solid #99b3e6;
+	background-color: 				#fff;
+	/*background-image:url(../img/nav_out.png);*/
+	font-weight:						normal;
+}
+#xo-globalnav ul li:hover ul li a:hover {
+	color:								#666;
+	background-color: 				#99b3e6 !important;
+	/*background-image:url(../img/nav_over.png);*/
+	text-decoration:					none;
+}
+
+/*Paramètres spécifiques pour IE6*/
+#xo-globalnav table {
+	position:							absolute;
+	top:									-1px;
+	left:									0;
+	border-collapse:					collapse;
+}
+#xo-globalnav ul li a:hover {
+	background-color: 				#fff;
+	text-decoration:					none;
+}
+#xo-globalnav ul li a:hover ul {
+	display:								block;
+	width:								90px;
+	position:							absolute;
+	z-index:								999;
+	top:									25px;
+	left:									0;
+	margin-top:							0.1em;
+}
+#xo-globalnav ul li a:hover ul li a {
+	display:								block;
+	width:								90px;
+	height:								1px;
+	line-height:						1.3em;
+	padding:								4px 10px 4px 10px;
+	border-right: 					1px solid #99b3e6;
+	border-left: 						1px solid #99b3e6;
+	border-bottom: 					1px solid #99b3e6;
+	background-color: 				#fff;
+	font-weight:						normal;
+}
+#xo-globalnav ul li a:hover ul li a:hover {
+	background-color: 				#99b3e6 !important;
+	/*background-image:url(../img/nav_over.png);*/
+	text-decoration:					none;
+}
